@@ -128,10 +128,10 @@ python  main.py gen  --model-path='checkpoints/tang_199.pth' \
 生成其它诗歌的命令如下：
 
 ```Bash
-python2 main.py gen  --model-path='model.pth' 
-					 --pickle-path='tang.npz' 
-					 --start-words='江流天地外，' # 诗歌的开头
-					 --prefix-words='郡邑浮前浦，波澜动远空。' 
+python main.py gen  --model-path='model.pth'  \
+		--pickle-path='tang.npz' \
+		--start-words='江流天地外，' \
+		--prefix-words='郡邑浮前浦，波澜动远空。' 
 江流天地外，舟楫夜行东。相望登楼望，遥思北阙空。望云凝万象，碎雪冒秋风。地梗非归觐，戎书已再通。封疆曾屡辔，畎浍述有风。宁知农氏別，祗此浙江东。览镜知难遂，怀贤趣未终。远峰疑欲泛，瞻望忽无穷。飞鸟慙王粲，王公叙谢公。小臣叨侍从，题组赋成觞。具盗休民友，悠悠酷祀忠。
 ```
 
