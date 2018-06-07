@@ -1,0 +1,21 @@
+python  main.py gen  --model-path='checkpoints/tang_199.pth' \
+       --pickle-path='tang.npz' \
+       --start-words='深度学习' \
+       --prefix-words='江流天地外，山色有无中。' \
+       --acrostic=True\
+       --use-gpu=True
+
+
+python main.py gen  --model-path='checkpoints/tang_199.pth' \
+					 --pickle-path='tang.npz' \
+					 --start-words='江流天地外，'\
+					 --prefix-words='郡邑浮前浦，波澜动远空。' 
+
+
+
+python main.py train --plot-every=150 \
+					 --batch-size=128 \
+                     --pickle-path='tang.npz' \
+                     --lr=1e-3 \
+                     --env='poetry3' \
+                     --epoch=200
