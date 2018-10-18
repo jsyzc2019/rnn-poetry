@@ -13,7 +13,6 @@ class Visualizer():
     """
 
     def __init__(self, env='default', **kwargs):
-        import visdom
         self.vis = visdom.Visdom(env=env, **kwargs)
 
         # 画的第几个数，相当于横座标
